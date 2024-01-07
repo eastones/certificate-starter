@@ -1,4 +1,4 @@
-package org.apichat.common.modules.util;
+package org.apichart.common.modules.util;
 
 import java.io.File;
 import java.io.FileOutputStream;

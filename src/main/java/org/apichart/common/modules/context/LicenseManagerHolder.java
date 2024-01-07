@@ -1,4 +1,4 @@
-package org.apichat.common.modules.context;
+package org.apichart.common.modules.context;
 
 import de.schlichtherle.license.LicenseManager;
 import de.schlichtherle.license.LicenseParam;

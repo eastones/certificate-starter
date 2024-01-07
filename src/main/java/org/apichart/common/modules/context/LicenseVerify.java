@@ -1,7 +1,7 @@
-package org.apichat.common.modules.context;
+package org.apichart.common.modules.context;
 
 import de.schlichtherle.license.*;
-import org.apichat.common.modules.entity.LicenseVerifyParam;
+import org.apichart.common.modules.entity.LicenseVerifyParam;
 
 import java.io.File;
 import java.nio.file.Files;

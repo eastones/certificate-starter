@@ -1,4 +1,4 @@
-package org.apichat.common.modules.entity;
+package org.apichart.common.modules.entity;
 
 /**
  * License校验类需要的参数

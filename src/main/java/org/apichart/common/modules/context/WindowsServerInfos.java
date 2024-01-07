@@ -1,17 +1,14 @@
-package org.apichat.common.modules.context;
+package org.apichart.common.modules.context;
 
-import org.apache.commons.lang3.StringUtils;
-
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
 import java.net.InetAddress;
 import java.util.List;
+import java.util.Scanner;
 import java.util.stream.Collectors;
 
 /**
- * 用于获取客户Linux服务器的基本信息
+ * 用于获取客户Windows服务器的基本信息
  */
-public class LinuxServerInfos extends AbstractServerInfos{
+public class WindowsServerInfos extends AbstractServerInfos{
 
     @Override
     protected List<String> getIpAddress() throws Exception {
@@ -47,19 +44,20 @@ public class LinuxServerInfos extends AbstractServerInfos{
         //序列号
         String serialNumber = "";
 
-        //使用dmidecode命令获取CPU序列号
-        String[] shell = {"/bin/bash","-c","dmidecode -t processor | grep 'ID' | awk -F ':' '{print $2}' | head -n 1"};
-        Process process = Runtime.getRuntime().exec(shell);
+        //使用WMIC获取CPU序列号
+        Process process = Runtime.getRuntime().exec("wmic cpu get processorid");
         process.getOutputStream().close();
+        Scanner scanner = new Scanner(process.getInputStream());
 
-        BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
-
-        String line = reader.readLine().trim();
-        if(StringUtils.isNotBlank(line)){
-            serialNumber = line;
+        if(scanner != null && scanner.hasNext()){
+            scanner.next();
         }
 
-        reader.close();
+        if(scanner.hasNext()){
+            serialNumber = scanner.next().trim();
+        }
+
+        scanner.close();
         return serialNumber;
     }
 
@@ -68,19 +66,20 @@ public class LinuxServerInfos extends AbstractServerInfos{
         //序列号
         String serialNumber = "";
 
-        //使用dmidecode命令获取主板序列号
-        String[] shell = {"/bin/bash","-c","dmidecode | grep 'Serial Number' | awk -F ':' '{print $2}' | head -n 1"};
-        Process process = Runtime.getRuntime().exec(shell);
+        //使用WMIC获取主板序列号
+        Process process = Runtime.getRuntime().exec("wmic baseboard get serialnumber");
         process.getOutputStream().close();
+        Scanner scanner = new Scanner(process.getInputStream());
 
-        BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
-
-        String line = reader.readLine().trim();
-        if(StringUtils.isNotBlank(line)){
-            serialNumber = line;
+        if(scanner != null && scanner.hasNext()){
+            scanner.next();
         }
 
-        reader.close();
+        if(scanner.hasNext()){
+            serialNumber = scanner.next().trim();
+        }
+
+        scanner.close();
         return serialNumber;
     }
 }

@@ -1,9 +1,9 @@
-package org.apichat.common.modules.context;
+package org.apichart.common.modules.context;
 
 import de.schlichtherle.license.*;
 import de.schlichtherle.xml.GenericCertificate;
 import org.apache.commons.lang3.StringUtils;
-import org.apichat.common.modules.entity.LicenseCheckModel;
+import org.apichart.common.modules.entity.LicenseCheckModel;
 
 import java.beans.XMLDecoder;
 import java.io.BufferedInputStream;

@@ -1,4 +1,4 @@
-package org.apichat.common.modules.entity;
+package org.apichart.common.modules.entity;
 
 import java.io.Serializable;
 import java.util.List;

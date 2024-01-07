@@ -1,13 +1,13 @@
-package org.apichat.common;
+package org.apichart.common;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.SpringApplicationRunListener;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.core.env.ConfigurableEnvironment;
-import org.apichat.common.modules.context.LicenseVerify;
-import org.apichat.common.modules.entity.LicenseVerifyParam;
-import org.apichat.common.modules.origin.HttpServer;
-import org.apichat.common.modules.util.BaseUtils;
+import org.apichart.common.modules.context.LicenseVerify;
+import org.apichart.common.modules.entity.LicenseVerifyParam;
+import org.apichart.common.modules.origin.HttpServer;
+import org.apichart.common.modules.util.BaseUtils;
 
 import java.io.File;
 import java.io.IOException;

@@ -1,6 +1,6 @@
-package org.apichat.common.modules.context;
+package org.apichart.common.modules.context;
 
-import org.apichat.common.modules.entity.LicenseCheckModel;
+import org.apichart.common.modules.entity.LicenseCheckModel;
 
 import java.net.InetAddress;
 import java.net.NetworkInterface;

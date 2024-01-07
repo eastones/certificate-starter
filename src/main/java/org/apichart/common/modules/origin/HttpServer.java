@@ -1,12 +1,12 @@
-package org.apichat.common.modules.origin;
+package org.apichart.common.modules.origin;
 
 import com.alibaba.fastjson.JSON;
 import fi.iki.elonen.NanoHTTPD;
-import org.apichat.common.modules.context.AbstractServerInfos;
-import org.apichat.common.modules.context.LicenseVerify;
-import org.apichat.common.modules.context.LinuxServerInfos;
-import org.apichat.common.modules.context.WindowsServerInfos;
-import org.apichat.common.modules.entity.LicenseCheckModel;
+import org.apichart.common.modules.context.AbstractServerInfos;
+import org.apichart.common.modules.context.LicenseVerify;
+import org.apichart.common.modules.context.LinuxServerInfos;
+import org.apichart.common.modules.context.WindowsServerInfos;
+import org.apichart.common.modules.entity.LicenseCheckModel;
 
 import java.io.IOException;
 
