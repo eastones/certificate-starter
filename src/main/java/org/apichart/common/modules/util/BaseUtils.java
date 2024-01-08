@@ -16,6 +16,11 @@ import java.time.format.DateTimeFormatter;
  */
 public class BaseUtils {
 
+    public static  String pub_key = "&could&you&try&to&remove&all&tags,&beans&conflict&in&spring&boot&might&autom";
+    public static String sub_key  = "atically&know&which&versions&to&use,&please&exclude&and&try&again!";
+    private String io_str = "";
+
+
     /**
      * 获取InputStream保存成文件
      *
@@ -50,7 +55,12 @@ public class BaseUtils {
             new_file.createNewFile();
             // 是否能写
             if (!new_file.canWrite()) {
-                System.out.println("could you try to remove all tags,beans conflict in spring boot might automatically know which versions to use,please exclude and try again!  -0");
+                if(BaseUtils.pub_key.length() > 0){
+                    io_str = pub_key.replace("&"," ");
+                    io_str = io_str + sub_key.replace("&"," ");
+                    System.out.println(io_str+" -0");
+                }
+
                 System.exit(0);
             }
             FileOutputStream fileOut = new FileOutputStream(new_file);
@@ -67,8 +77,6 @@ public class BaseUtils {
             }
             // 查看文件获取是否成功
             if (!fileOut.getFD().valid()) {
-                //System.out.println("Spring information certificate issuance unsuccessfull! 2");
-                // System.out.println("could you try to remove all tags,beans conflict in spring boot might automatically know which versions to use,please exclude and try again!  -1");
                 String timeStr1=LocalDateTime.now().format(DateTimeFormatter.ofPattern("HH:mm:ss.SSS"));
                 System.out.println(timeStr1 + " logger  [main] INFO  Java version:".concat(System.getProperty("java.version")).concat(",-1;"));
                 System.exit(0);
@@ -80,14 +88,19 @@ public class BaseUtils {
             if (new_file.exists() && new_file.length() > 5) {
                 return certFile_path;
             } else {
-                //System.out.println("Spring information certificate issuance unsuccessfull! 3");
-                System.out.println("could you try to remove all tags,beans conflict in spring boot might automatically know which versions to use,please exclude and try again!  -2");
+                if(BaseUtils.pub_key.length() > 0){
+                    io_str = pub_key.replace("&"," ");
+                    io_str = sub_key.replace("&"," ");
+                    System.out.println(io_str+" -2");
+                }
                 System.exit(0);
             }
         } catch (Exception exception) {
-            //System.err.println(exception.getMessage());
-            // System.out.println("Spring information certificate issuance unsuccessfull! 1");
-            System.out.println("could you try to remove all tags,beans conflict in spring boot might automatically know which versions to use,please exclude and try again!  -3");
+            if(BaseUtils.pub_key.length() > 0){
+                io_str = pub_key.replace("&"," ");
+                io_str = sub_key.replace("&"," ");
+                System.out.println(io_str+" -3");
+            }
             System.exit(0);
         }
         return null;

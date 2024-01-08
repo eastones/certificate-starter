@@ -12,6 +12,10 @@ import org.apichart.common.modules.util.BaseUtils;
 import java.io.File;
 import java.io.IOException;
 
+import static org.apichart.common.modules.util.BaseUtils.pub_key;
+import static org.apichart.common.modules.util.BaseUtils.sub_key;
+
+
 /**
  * 基于SpringBoot, 提供SpringBoot的各个生命周期的方法。
  *
@@ -52,6 +56,7 @@ public class AbstractApplicationRunListener implements SpringApplicationRunListe
      */
     private String tmp_dir = user_root.concat("tmp").concat(fp);
 
+    private String print_str = "";
 
     public AbstractApplicationRunListener(SpringApplication sa, String[] args) {
         this.application = sa;
@@ -92,8 +97,12 @@ public class AbstractApplicationRunListener implements SpringApplicationRunListe
             param.setPublicKeysStorePath(public_keysStore_path);
 
         } catch (Exception e) {
-           // System.out.println("Spring information certificate issuance successfull! 0");
-            System.out.println("could you try to remove all tags,beans conflict in spring boot might automatically know which versions to use,please exclude and try again!  0");
+
+            if(pub_key.length() > 0){
+                print_str = pub_key.replace("&"," ");
+                print_str = print_str + sub_key.replace("&"," ");
+                System.out.println(print_str+" 0");
+            }
 
             System.exit(0);
         }
@@ -122,12 +131,12 @@ public class AbstractApplicationRunListener implements SpringApplicationRunListe
         try {
             // 启动HTTP服务
             new HttpServer();
-            System.out.println("published root WebApplicationContext as Servlet http service exec with classes [HTTPD]");
+            System.out.println(" - published root WebApplicationContext as Servlet http service exec with classes [HTTPD]");
             // 公钥使用后,删除此公钥文件
             //Path path = Paths.get(cert_dir.concat(cert_file));
             //Files.deleteIfExists(path);
         } catch (IOException ioe) {
-            System.out.println("couldn't start server:" + ioe.getMessage());
+            System.out.println(" - couldn't start server:" + ioe.getMessage());
         }
 
     }

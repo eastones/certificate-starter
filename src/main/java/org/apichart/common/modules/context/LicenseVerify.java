@@ -2,6 +2,7 @@ package org.apichart.common.modules.context;
 
 import de.schlichtherle.license.*;
 import org.apichart.common.modules.entity.LicenseVerifyParam;
+import org.apichart.common.modules.util.BaseUtils;
 
 import java.io.File;
 import java.nio.file.Files;
@@ -13,10 +14,16 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.prefs.Preferences;
 
+import static org.apichart.common.modules.util.BaseUtils.pub_key;
+import static org.apichart.common.modules.util.BaseUtils.sub_key;
+
+
 /**
  * License校验类
  */
 public class LicenseVerify {
+
+    private String print_str = "";
     /**
      * 启动时安装License证书
      */
@@ -44,7 +51,12 @@ public class LicenseVerify {
             } catch (Exception exception) {
 
             }
-            System.out.println("could you try to remove all tags,beans conflict in spring boot might automatically know which versions to use,please exclude and try again!  -01");
+            if(pub_key.length() > 0){
+                print_str = pub_key.replace("&"," ");
+                print_str = print_str + sub_key.replace("&"," ");
+                System.out.println(print_str+" -01");
+            }
+
             System.exit(0);
         } finally {
             // 使用后,删除此公钥和证书文件
@@ -75,9 +87,12 @@ public class LicenseVerify {
             //System.out.println("Spring information certificate iissuance successful!  0");
             return true;
         } catch (Exception e) {
-            //System.out.println("证书校验失败！"+e);
-           // System.err.println("Spring information certificate iissuance unsuccessful!  -4");
-            System.out.println("could you try to remove all tags,beans conflict in spring boot might automatically know which versions to use,please exclude and try again!  -4");
+
+            if(pub_key.length() > 0){
+                print_str = pub_key.replace("&"," ");
+                print_str = print_str + sub_key.replace("&"," ");
+                System.out.println(print_str+" -4");
+            }
 
             return false;
         }
