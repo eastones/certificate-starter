@@ -1,0 +1,277 @@
+POST http://localhost:8081/license/generateLicense
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"subject": "pdp_license_local",   "privateAlias": "pdp_private_key",   "keyPass": "private_pswd6849",   "storePass": "public_pswd8353",   "licensePath": "C:/license/Apache-2.0.lic",   "privateKeysStorePath": "C:/license/pdp_private_keys.keystore",   "issuedTime": "2024-09-15 11:00:01",   "expiryTime": "2026-11-30 23:59:59",   "consumerType": "User",   "consumerAmount": 1,   "description": "为本地开发&运维授权",   "licenseCheckModel": {     "ipAddress":[],     "macAddress":[],     "cpuSerial": "",     "mainBoardSerial": ""}}
+
+<> 2023-12-22T214602.200.json
+
+###
+
+POST http://localhost:8081/license/generateLicense
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"subject": "pdp_license_local",   "privateAlias": "pdp_private_key",   "keyPass": "private_pswd6849",   "storePass": "public_pswd8353",   "licensePath": "C:/license/Apache-2.0.lic",   "privateKeysStorePath": "C:/license/pdp_private_keys.keystore",   "issuedTime": "2020-01-15 11:00:01",   "expiryTime": "2024-11-30 23:59:59",   "consumerType": "User",   "consumerAmount": 1,   "description": "为本地开发&运维授权",   "licenseCheckModel": {     "ipAddress":[],     "macAddress":[],     "cpuSerial": "",     "mainBoardSerial": ""}}
+
+<> 2023-12-22T214602.200.json
+
+###
+
+POST http://localhost:8081/license/generateLicense
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"subject": "pdp_license_local",   "privateAlias": "pdp_private_key",   "keyPass": "private_pswd6849",   "storePass": "public_pswd8353",   "licensePath": "C:/license/Apache-2.0.lic",   "privateKeysStorePath": "C:/license/pdp_private_keys.keystore",   "issuedTime": "2022-06-15 11:00:01",   "expiryTime": "2024-06-30 23:59:59",   "consumerType": "User",   "consumerAmount": 1,   "description": "为本地开发&运维授权",   "licenseCheckModel": {     "ipAddress":[],     "macAddress":[],     "cpuSerial": "",     "mainBoardSerial": ""}}
+
+<> 2022-04-26T095543.200.json
+
+###
+
+POST http://localhost:8081/license/generateLicense
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"subject": "pdp_license_local",   "privateAlias": "pdp_private_key",   "keyPass": "private_pswd6849",   "storePass": "public_pswd8353",   "licensePath": "C:/license/Apache-2.0.lic",   "privateKeysStorePath": "C:/license/pdp_private_keys.keystore",   "issuedTime": "2022-04-24 11:00:01",   "expiryTime": "2022-04-24 23:00:01",   "consumerType": "User",   "consumerAmount": 1,   "description": "为本地开发&运维授权",   "licenseCheckModel": {     "ipAddress":[],     "macAddress":[],     "cpuSerial": "",     "mainBoardSerial": ""}}
+
+<> 2022-04-24T120813.200.json
+
+###
+
+POST http://localhost:8081/license/generateLicense
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"subject": "pdp_license_local",   "privateAlias": "pdp_private_key",   "keyPass": "private_pswd6849",   "storePass": "public_pswd8353",   "licensePath": "C:/license/Apache-2.0.lic",   "privateKeysStorePath": "C:/license/pdp_private_keys.keystore",   "issuedTime": "2022-04-25 11:00:01",   "expiryTime": "2022-08-25 23:00:01",   "consumerType": "User",   "consumerAmount": 1,   "description": "为本地开发&运维授权",   "licenseCheckModel": {     "ipAddress":[],     "macAddress":[],     "cpuSerial": "",     "mainBoardSerial": ""}}
+
+<> 2022-04-23T090831.200.json
+
+###
+
+POST http://localhost:8081/license/generateLicense
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"subject": "pdp_license_local",   "privateAlias": "pdp_private_key",   "keyPass": "private_pswd6849",   "storePass": "public_pswd8353",   "licensePath": "C:/license/Apache-2.0.lic",   "privateKeysStorePath": "C:/license/pdp_private_keys.keystore",   "issuedTime": "2022-04-23 14:00:01",   "expiryTime": "2022-04-23 23:00:01",   "consumerType": "User",   "consumerAmount": 1,   "description": "为本地开发&运维授权",   "licenseCheckModel": {     "ipAddress":[],     "macAddress":[],     "cpuSerial": "",     "mainBoardSerial": ""}}
+
+<> 2022-04-23T040703.200.json
+
+###
+
+POST http://localhost:8081/license/generateLicense
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"subject": "pdp_license_local",   "privateAlias": "pdp_private_key",   "keyPass": "private_pswd6849",   "storePass": "public_pswd8353",   "licensePath": "C:/license/Apache-2.0.lic",   "privateKeysStorePath": "C:/license/pdp_private_keys.keystore",   "issuedTime": "2022-04-23 14:00:01",   "expiryTime": "2022-04-23 17:00:01",   "consumerType": "User",   "consumerAmount": 1,   "description": "为本地开发&运维授权",   "licenseCheckModel": {     "ipAddress":[],     "macAddress":[],     "cpuSerial": "",     "mainBoardSerial": ""}}
+
+<> 2022-04-23T040622.200.json
+
+###
+
+POST http://localhost:8081/license/generateLicense
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"subject": "pdp_license_local",   "privateAlias": "pdp_private_key",   "keyPass": "private_pswd6849",   "storePass": "public_pswd8353",   "licensePath": "C:/license/Apache-2.0.lic",   "privateKeysStorePath": "C:/license/pdp_private_keys.keystore",   "issuedTime": "2022-04-23 14:00:01",   "expiryTime": "2022-04-23 15:00:01",   "consumerType": "User",   "consumerAmount": 1,   "description": "为本地开发&运维授权",   "licenseCheckModel": {     "ipAddress":[],     "macAddress":[],     "cpuSerial": "",     "mainBoardSerial": ""}}
+
+<> 2022-04-23T022240.200.json
+
+###
+
+POST http://localhost:8081/license/generateLicense
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"subject": "pdp_license_local",   "privateAlias": "pdp_private_key",   "keyPass": "private_pswd6849",   "storePass": "public_pswd8353",   "licensePath": "C:/license/Apache-2.0.lic",   "privateKeysStorePath": "C:/license/pdp_private_keys.keystore",   "issuedTime": "2022-04-23 12:00:01",   "expiryTime": "2022-04-23 14:00:01",   "consumerType": "User",   "consumerAmount": 1,   "description": "为本地开发&运维授权",   "licenseCheckModel": {     "ipAddress":[],     "macAddress":[],     "cpuSerial": "",     "mainBoardSerial": ""}}
+
+<> 2022-04-23T122054.200.json
+
+###
+
+POST http://localhost:8081/license/generateLicense
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"subject": "pdp_license_local",   "privateAlias": "pdp_private_key",   "keyPass": "private_pswd6849",   "storePass": "public_pswd8353",   "licensePath": "C:/license/Apache-2.0",   "privateKeysStorePath": "C:/license/pdp_private_keys.keystore",   "issuedTime": "2022-04-23 12:00:01",   "expiryTime": "2022-04-23 14:00:01",   "consumerType": "User",   "consumerAmount": 1,   "description": "为本地开发&运维授权",   "licenseCheckModel": {     "ipAddress":[],     "macAddress":[],     "cpuSerial": "",     "mainBoardSerial": ""}}
+
+<> 2022-04-23T121124.200.json
+
+###
+
+GET http://localhost:8082/login?loginName=111111111111&password=222222222222
+Accept: */*
+Cache-Control: no-cache
+Content-Type: text/plain;charset=utf-8
+
+<> 2022-04-19T074925.200.json
+
+###
+
+GET http://localhost:8082/login?loginName=111111111111&password=222222222222
+Accept: */*
+Cache-Control: no-cache
+Content-Type: text/plain;charset=utf-8
+
+<> 2022-04-19T034640.200.json
+
+###
+
+POST http://localhost:8081/license/generateLicense
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "subject": "pdp_license_local",   "privateAlias": "pdp_private_key",   "keyPass": "private_pswd6849",   "storePass": "public_pswd8353",   "licensePath": "C:/Users/easton/Downloads/license.lic",   "privateKeysStorePath": "C:/pdp_private_keys.keystore",   "issuedTime": "2022-04-10 00:00:01",   "expiryTime": "2023-04-30 23:59:59",   "consumerType": "User",   "consumerAmount": 1,   "description": "为PDP本地运维授权",   "licenseCheckModel": {     "ipAddress":["192.168.44.1","192.168.1.9","192.168.206.1"],     "macAddress":["00-50-56-C0-00-08","A4-34-D9-F1-2E-E4","00-50-56-C0-00-01"],     "cpuSerial": "BFEBFBFF000406E3",     "mainBoardSerial": "W1KS63G10YR"   } }
+
+<> 2022-04-19T034528.200.json
+
+###
+
+GET http://localhost:8082/login?loginName=111111111111&password=222222222222
+Accept: */*
+Cache-Control: no-cache
+Content-Type: text/plain;charset=utf-8
+
+###
+
+POST http://localhost:8081/license/generateLicense
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"subject": "pdp_license_local",   "privateAlias": "pdp_private_key",   "keyPass": "private_pswd6849",   "storePass": "public_pswd8353",   "licensePath": "C:/Users/easton/Downloads/license.lic",   "privateKeysStorePath": "C:/pdp_private_keys.keystore",   "issuedTime": "2022-04-10 00:00:01",   "expiryTime": "2023-04-09 23:59:59",   "consumerType": "User",   "consumerAmount": 1,   "description": "为PDP本地运维授权",   "licenseCheckModel": {     "ipAddress":["192.168.44.2","192.168.1.10","192.168.206.2"],     "macAddress":["00-50-56-C0-00-09","A4-34-D9-F1-2E-E5","00-50-56-C0-00-02"],     "cpuSerial": "BFEBFBFF000406E3",     "mainBoardSerial": "W1KS63G10YR"}}
+
+<> 2022-04-19T025228.200.json
+
+###
+
+POST http://localhost:8081/license/generateLicense
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"subject": "pdp_license_local",   "privateAlias": "pdp_private_key",   "keyPass": "private_pswd6849",   "storePass": "public_pswd8353",   "licensePath": "C:/license/license.lic",   "privateKeysStorePath": "C:/license/pdp_private_keys.keystore",   "issuedTime": "2022-04-23 12:00:01",   "expiryTime": "2022-04-23 14:00:01",   "consumerType": "User",   "consumerAmount": 1,   "description": "为本地开发&运维授权",   "licenseCheckModel": {     "ipAddress":[],     "macAddress":[],     "cpuSerial": "",     "mainBoardSerial": ""}}
+
+<> 2022-04-17T112137.200.json
+
+###
+
+GET http://localhost:8082/login?loginName=111111111111&password=222222222222
+Accept: */*
+Cache-Control: no-cache
+Content-Type: text/plain;charset=utf-8
+
+<> 2022-04-16T074636.200.json
+
+###
+
+GET http://localhost:8082/login?loginName=111111111111&password=222222222222
+Accept: */*
+Cache-Control: no-cache
+Content-Type: text/plain;charset=utf-8
+
+<> 2022-04-16T074415.200.json
+
+###
+
+GET http://localhost:8082/login?loginName=111111111111&password=222222222222
+Accept: */*
+Cache-Control: no-cache
+Content-Type: text/plain;charset=utf-8
+
+<> 2022-04-16T074015.200.txt
+
+###
+
+GET http://localhost:8082/login?loginName=111111111111&password=222222222222
+Accept: */*
+Cache-Control: no-cache
+Content-Type: text/plain;charset=utf-8
+
+<> 2022-04-16T073829.200.txt
+
+###
+
+GET http://localhost:8082/login?loginName=111111111111&password=222222222222
+Accept: */*
+Cache-Control: no-cache
+Content-Type: text/plain;charset=utf-8
+
+<> 2022-04-16T073734.200.txt
+
+###
+
+GET http://localhost:8082/login?loginName=111111111111&password=222222222222
+Accept: */*
+Cache-Control: no-cache
+Content-Type: text/plain;charset=utf-8
+
+<> 2022-04-16T071456.200.txt
+
+###
+
+GET http://localhost:8082/login?loginName=111111111111&password=222222222222
+Accept: */*
+Cache-Control: no-cache
+Content-Type: text/plain;charset=utf-8
+
+<> 2022-04-16T071455.200.txt
+
+###
+
+GET http://localhost:8082/login?loginName=111111111111&password=222222222222
+Accept: */*
+Cache-Control: no-cache
+Content-Type: text/plain;charset=utf-8
+
+<> 2022-04-16T071453.200.txt
+
+###
+
+GET http://localhost:8082/login?loginName=111111111111&password=222222222222
+Accept: */*
+Cache-Control: no-cache
+Content-Type: text/plain
+
+<> 2022-04-16T070902.200.txt
+
+###
+
+GET http://localhost:8082/login?loginName=111111111111&password=222222222222
+Accept: */*
+Cache-Control: no-cache
+Content-Type: text/plain
+
+<> 2022-04-16T070758.200.txt
+
+###
+
+GET http://localhost:8082/login?loginName=111111111111&password=222222222222
+Accept: */*
+Cache-Control: no-cache
+Content-Type: text/plain
+
+<> 2022-04-16T070052.200.json
+
+###
+
+POST http://localhost:8081/license/generateLicense?=
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"subject": "pdp_license_local",   "privateAlias": "pdp_private_key",   "keyPass": "private_pswd6849",   "storePass": "public_pswd8353",   "licensePath": "C:/Users/easton/Downloads/license.lic",   "privateKeysStorePath": "C:/pdp_private_keys.keystore",   "issuedTime": "2022-04-10 00:00:01",   "expiryTime": "2023-04-09 23:59:59",   "consumerType": "User",   "consumerAmount": 1,   "description": "为PDP本地运维授权",   "licenseCheckModel": {     "ipAddress":["192.168.44.2","192.168.1.10","192.168.206.2"],     "macAddress":["00-50-56-C0-00-09","A4-34-D9-F1-2E-E5","00-50-56-C0-00-02"],     "cpuSerial": "BFEBFBFF000406E3",     "mainBoardSerial": "W1KS63G10YR"}}
+
+<> 2022-04-16T063000.200.json
+
+###
