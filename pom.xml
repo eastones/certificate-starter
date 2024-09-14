@@ -4,8 +4,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.apichart.common</groupId>
-    <artifactId>spring-certificate-starter</artifactId>
-    <version>2.3.10.RELEASE</version>
+    <artifactId>spring-slf4j-api-starter</artifactId>
+    <version>2.3.12.RELEASE</version>
     <name>${project.artifactId}</name>
     <packaging>jar</packaging>
     <url>https://gitee.com/apichat/spring-certificate-starter</url>
