@@ -3,7 +3,7 @@ package org.apichart.common.modules.context;
 import de.schlichtherle.license.*;
 import de.schlichtherle.xml.GenericCertificate;
 import org.apache.commons.lang3.StringUtils;
-import org.apichart.common.modules.entity.LicenseCheckModel;
+import org.apichart.common.modules.entity.LicenseCheckModels;
 
 import java.beans.XMLDecoder;
 import java.io.BufferedInputStream;
@@ -129,11 +129,11 @@ public class CustomLicenseManager extends LicenseManager{
 
         //2. 然后校验自定义的License参数
         //License中可被允许的参数信息
-        LicenseCheckModel expectedCheckModel = (LicenseCheckModel) content.getExtra();
+        LicenseCheckModels expectedCheckModel = (LicenseCheckModels) content.getExtra();
         // 以下先注释掉,先不做本地IP之类的检验.
         if(expectedCheckModel != null){
             //当前服务器真实的参数信息
-            LicenseCheckModel serverCheckModel = getServerInfos();
+            LicenseCheckModels serverCheckModel = getServerInfos();
 
             if(serverCheckModel != null){
                 //校验IP地址
@@ -205,7 +205,7 @@ public class CustomLicenseManager extends LicenseManager{
      * 获取当前服务器需要额外校验的License参数
      * @return demo.LicenseCheckModel
      */
-    private LicenseCheckModel getServerInfos(){
+    private LicenseCheckModels getServerInfos(){
         //操作系统类型
         String osName = System.getProperty("os.name").toLowerCase();
         AbstractServerInfos abstractServerInfos = null;

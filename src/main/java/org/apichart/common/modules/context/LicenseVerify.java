@@ -2,7 +2,6 @@ package org.apichart.common.modules.context;
 
 import de.schlichtherle.license.*;
 import org.apichart.common.modules.entity.LicenseVerifyParam;
-import org.apichart.common.modules.util.BaseUtils;
 
 import java.io.File;
 import java.nio.file.Files;

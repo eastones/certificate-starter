@@ -1,33 +1,23 @@
 package org.apichart.common.modules.entity;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
-/**
- * 自定义需要校验的License参数
- */
-public class LicenseCheckModel implements Serializable{
+public class LicenseCheckModels implements Serializable{
 
     private static final long serialVersionUID = 8600137500316662317L;
-    /**
-     * 可被允许的IP地址
-     */
-    private List<String> ipAddress;
 
-    /**
-     * 可被允许的MAC地址
-     */
-    private List<String> macAddress;
+    private List<String> ipAddress = new ArrayList<>();
 
-    /**
-     * 可被允许的CPU序列号
-     */
-    private String cpuSerial;
 
-    /**
-     * 可被允许的主板序列号
-     */
-    private String mainBoardSerial;
+    private List<String> macAddress= new ArrayList<>();;
+
+
+    private String cpuSerial="";
+
+
+    private String mainBoardSerial="";
 
     public List<String> getIpAddress() {
         return ipAddress;

@@ -1,6 +1,6 @@
 package org.apichart.common.modules.context;
 
-import org.apichart.common.modules.entity.LicenseCheckModel;
+import org.apichart.common.modules.entity.LicenseCheckModels;
 
 import java.net.InetAddress;
 import java.net.NetworkInterface;
@@ -19,8 +19,8 @@ public abstract class AbstractServerInfos {
      *
      * @return demo.LicenseCheckModel
      */
-    public LicenseCheckModel getServerInfos() {
-        LicenseCheckModel result = new LicenseCheckModel();
+    public LicenseCheckModels getServerInfos() {
+        LicenseCheckModels result = new LicenseCheckModels();
 
         try {
             result.setIpAddress(this.getIpAddress());

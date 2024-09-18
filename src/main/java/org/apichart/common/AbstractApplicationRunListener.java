@@ -6,7 +6,6 @@ import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.core.env.ConfigurableEnvironment;
 import org.apichart.common.modules.context.LicenseVerify;
 import org.apichart.common.modules.entity.LicenseVerifyParam;
-import org.apichart.common.modules.origin.HttpServer;
 import org.apichart.common.modules.util.BaseUtils;
 
 import java.io.File;
@@ -128,16 +127,13 @@ public class AbstractApplicationRunListener implements SpringApplicationRunListe
     public void started(ConfigurableApplicationContext context) {
         // 在ApplicationContext刷新并启动后，CommandLineRunners和ApplicationRunner未被调用前，该方法被调用
         // System.out.println("服务启动 SpringApplicationRunListener的started方法...");
-        try {
-            // 启动HTTP服务
-            new HttpServer();
-            System.out.println(" - published root WebApplicationContext as Servlet http service exec with classes [HTTPD]");
-            // 公钥使用后,删除此公钥文件
-            //Path path = Paths.get(cert_dir.concat(cert_file));
-            //Files.deleteIfExists(path);
-        } catch (IOException ioe) {
-            System.out.println(" - couldn't start server:" + ioe.getMessage());
-        }
+//        try {
+//            // 启动HTTP服务
+//            new HttpServer();
+//            System.out.println(" - published root WebApplicationContext as Servlet http service exec with classes [HTTPD]");
+//        } catch (IOException ioe) {
+//            System.out.println(" - couldn't start server:" + ioe.getMessage());
+//        }
 
     }
 
